@@ -181,6 +181,7 @@ HTML = """
           <option value="Indonesia">Indonesia</option>
           <option value="Singapore">Singapore</option>
           <option value="Vietnam">Vietnam</option>
+          <option value="Vietnam">Mexico</option>
           <option value="Malaysia">Malaysia</option>
         </select>
       </div>
