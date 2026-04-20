@@ -1,10 +1,19 @@
-# Utilise une image Python légère et officielle
+# Utilise une image Python officielle
 FROM python:3.9-slim
 
-# Définir le répertoire de travail dans le conteneur
+# Installe les dépendances système nécessaires pour pandas et openpyxl
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    python3-dev \
+    libpq-dev && \
+    rm -rf /var/lib/apt/lists/*
+
+# Définir le répertoire de travail
 WORKDIR /app
 
-# Copier les dépendances et les installer
+# Copier les dépendances Python et les installer
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
