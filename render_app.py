@@ -78,7 +78,7 @@ _file_cache = {} # token -> (bytes, filename)
 def index():
     return render_template_string(HTML)
 
-@app.route('/process', method=['POST'])
+@app.route('/process', methods=['POST'])
 def process():
     try:
         if 'file' not in request.files:
