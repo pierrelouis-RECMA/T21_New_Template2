@@ -24,7 +24,7 @@ from lxml import etree
 warnings.filterwarnings('ignore')
 
 # ── Paths ────────────────────────────────────────────────────────────────────
-TEMPLATE  = '/mnt/user-data/uploads/T21_HK_Agencies_Glass_v12.pptx'
+TEMPLATE  = 'T21_HK_Agencies_Glass_v12.pptx'
 EXCEL     = '/mnt/user-data/uploads/Newbiz_Balance_DB_Report_HK_2025.xlsx'
 OUTPUT    = '/mnt/user-data/outputs/HK_NBB_Report_2025_AUTO.pptx'
 IMG_DIR   = '/home/claude/slide_imgs'
